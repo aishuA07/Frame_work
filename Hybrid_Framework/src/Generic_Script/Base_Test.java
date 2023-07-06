@@ -17,7 +17,9 @@ public class Base_Test implements Framework_const1 {
 	public void openAppln() 
 	{
 		System.setProperty(gecko_key, gecko_value);
+		//lauching the browser
 		 driver = new FirefoxDriver();
+		 //maximize the window
 		 driver.manage().window().maximize();
 		 driver.get(base_url);
 		 driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
